@@ -1,0 +1,8 @@
+{
+  "name": "blApp",
+  "app_id": "c0337b74",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
