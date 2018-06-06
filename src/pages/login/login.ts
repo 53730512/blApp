@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {NavController, NavParams,ViewController, LoadingController, ToastController} from 'ionic-angular';
+import { BaseUI } from '../common/baseUI';
+import { RestProvider } from '../../providers/rest/rest';
 
 /**
  * Generated class for the LoginPage page.
@@ -8,18 +10,47 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
-export class LoginPage {
+export class LoginPage extends BaseUI{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  account:string;
+  password:string;
+  error_message:string;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl:ViewController, public loadingCtrl:LoadingController, public rest:RestProvider, public toastCtrl:ToastController) {
+    super(loadingCtrl, toastCtrl);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  dismiss(){
+    this.viewCtrl.dismiss();
+  }
+
+  login()
+  {
+    if(!this.account||!this.password)
+    {
+      this.showToast("账号和密码不能为空!");
+      return;
+    }
+    let loader = this.showLoading("正在登录");
+    this.rest.login(this.account, this.password).subscribe(
+      f=>{
+       // alert(f["status"]);
+      if(f["status"] == "OK"){
+        
+      }else{
+        loader.dismiss();
+          this.showToast(f["StatusContent"]);
+      }
+
+    }, error=>this.error_message = <any>error
+    );
+  }
 }

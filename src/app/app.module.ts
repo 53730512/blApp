@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+import { HttpModule } from '@angular/http';
 import { DynamicPage } from '../pages/dynamic/dynamic';
 import { GamePage } from '../pages/game/game';
 import { AppPage } from '../pages/app/app';
@@ -26,6 +26,7 @@ import { RestProvider } from '../providers/rest/rest';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
