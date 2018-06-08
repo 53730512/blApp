@@ -23,6 +23,19 @@ export class PersonalPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
    public modalCtrl:ModalController,
   public storage:Storage) {
+
+    this.storage.get("UserId").then ((val)=>{
+      if(val != null)
+      {
+        this.notLogin = false;
+        this.logined = true;
+      }
+      else
+      {
+        this.notLogin = true;
+        this.logined = false;
+      }
+  });
   }
 
   ionViewDidLoad() {
