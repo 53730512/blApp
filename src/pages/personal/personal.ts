@@ -1,7 +1,7 @@
 import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
-
+import {Storage} from "@ionic/storage"
 /**
  * Generated class for the PersonalPage page.
  *
@@ -18,9 +18,11 @@ import { NavController, NavParams, ModalController } from 'ionic-angular';
 
 export class PersonalPage {
 
-  
+  public notLogin:boolean = true;
+  public logined:boolean = false;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-   public modalCtrl:ModalController) {
+   public modalCtrl:ModalController,
+  public storage:Storage) {
   }
 
   ionViewDidLoad() {
@@ -36,4 +38,23 @@ export class PersonalPage {
     modal.present();
   }
 
+  ionViewDidEnter(){
+    this.loadUserPage();
+  }
+
+  loadUserPage()
+  {
+    this.storage.get("UserId").then ((val)=>{
+        if(val != null)
+        {
+          this.notLogin = false;
+          this.logined = true;
+        }
+        else
+        {
+          this.notLogin = true;
+          this.logined = false;
+        }
+    });
+  }
 }

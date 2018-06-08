@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {NavController, NavParams,ViewController, LoadingController, ToastController} from 'ionic-angular';
 import { BaseUI } from '../common/baseUI';
 import { RestProvider } from '../../providers/rest/rest';
-
+import {Storage} from "@ionic/storage"
 /**
  * Generated class for the LoginPage page.
  *
@@ -20,7 +20,8 @@ export class LoginPage extends BaseUI{
   account:string;
   password:string;
   error_message:string;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl:ViewController, public loadingCtrl:LoadingController, public rest:RestProvider, public toastCtrl:ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl:ViewController, public loadingCtrl:LoadingController,
+     public rest:RestProvider, public toastCtrl:ToastController, public storage:Storage) {
     super(loadingCtrl, toastCtrl);
   }
 
@@ -43,8 +44,10 @@ export class LoginPage extends BaseUI{
     this.rest.login(this.account, this.password).subscribe(
       f=>{
        // alert(f["status"]);
-      if(f["status"] == "OK"){
-        
+      if(f["Status"] == "OK"){
+        this.storage.set('UserId', f['UserId']);
+        loader.dismiss();
+        this.dismiss();
       }else{
         loader.dismiss();
           this.showToast(f["StatusContent"]);
