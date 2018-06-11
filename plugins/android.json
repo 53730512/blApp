@@ -27,6 +27,10 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-wechat": {
+      "WECHATAPPID": "wxa04689ca5331ab0c",
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {}
