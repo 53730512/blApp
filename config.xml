@@ -85,4 +85,7 @@
     <plugin name="cordova-plugin-vibration" spec="^3.1.0" />
     <engine name="android" spec="~7.0.0" />
     <engine name="browser" spec="~5.0.3" />
+    <plugin name="cordova-plugin-wechat" spec="^2.3.0">
+        <variable name="WECHATAPPID" value="wxa04689ca5331ab0c" />
+    </plugin>
 </widget>

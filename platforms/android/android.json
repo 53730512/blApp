@@ -23,6 +23,14 @@
             {
               "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Wechat\"><param name=\"android-package\" value=\"xu.li.cordova.wechat.Wechat\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"WECHATAPPID\" value=\"wxa04689ca5331ab0c\" />",
+              "count": 1
             }
           ]
         }
@@ -42,6 +50,38 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<activity android:exported=\"true\" android:label=\"@string/launcher_name\" android:name=\".wxapi.WXEntryActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><data android:scheme=\"wxa04689ca5331ab0c\" /></intent-filter></activity>",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:exported=\"true\" android:label=\"@string/launcher_name\" android:launchMode=\"singleTop\" android:name=\".wxapi.WXPayEntryActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><data android:scheme=\"wxa04689ca5331ab0c\" /></intent-filter></activity>",
               "count": 1
             }
           ]
@@ -69,6 +109,10 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-wechat": {
+      "WECHATAPPID": "wxa04689ca5331ab0c",
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -106,6 +150,14 @@
         "cordova.InAppBrowser.open",
         "window.open"
       ]
+    },
+    {
+      "id": "cordova-plugin-wechat.Wechat",
+      "file": "plugins/cordova-plugin-wechat/www/wechat.js",
+      "pluginId": "cordova-plugin-wechat",
+      "clobbers": [
+        "Wechat"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -115,6 +167,7 @@
     "cordova-plugin-ionic-webview": "1.1.19",
     "cordova-plugin-ionic-keyboard": "2.0.5",
     "cordova-plugin-inappbrowser": "3.0.0",
-    "cordova-plugin-vibration": "3.1.0"
+    "cordova-plugin-vibration": "3.1.0",
+    "cordova-plugin-wechat": "2.3.0"
   }
 }

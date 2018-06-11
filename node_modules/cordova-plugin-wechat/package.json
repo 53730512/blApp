@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-wechat@2.3.0",
+        "scope": null,
+        "escapedName": "cordova-plugin-wechat",
+        "name": "cordova-plugin-wechat",
+        "rawSpec": "2.3.0",
+        "spec": "2.3.0",
+        "type": "version"
+      },
+      "D:\\work\\blApp"
+    ]
+  ],
+  "_from": "cordova-plugin-wechat@2.3.0",
+  "_id": "cordova-plugin-wechat@2.3.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-wechat",
+  "_nodeVersion": "9.10.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-wechat_2.3.0_1524821174764_0.9998882263676026"
+  },
+  "_npmUser": {
+    "name": "xu-li",
+    "email": "AthenaLightenedMyPath@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-wechat@2.3.0",
+    "scope": null,
+    "escapedName": "cordova-plugin-wechat",
+    "name": "cordova-plugin-wechat",
+    "rawSpec": "2.3.0",
+    "spec": "2.3.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wechat/-/cordova-plugin-wechat-2.3.0.tgz",
+  "_shasum": "6f5af9c8a077ee8a5ec81bb511b50becd78a77b2",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-wechat@2.3.0",
+  "_where": "D:\\work\\blApp",
+  "author": {
+    "name": "xu.li",
+    "email": "AthenaLightenedMyPath@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/xu-li/cordova-plugin-wechat/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-wechat",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "deprecated": "this version has been deprecated",
+  "description": "A cordova plugin, a JS version of Wechat SDK",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-/uBSSUp7M7BBUCTYRXGvOJtVtOB4agS8OscVl/Odo+0nul1am0ndlsygvlGRiERduUlYuWSX3RNDN5u2QEH9/A==",
+    "shasum": "6f5af9c8a077ee8a5ec81bb511b50becd78a77b2",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-wechat/-/cordova-plugin-wechat-2.3.0.tgz",
+    "fileCount": 24,
+    "unpackedSize": 29335508,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa4uy3CRA9TVsSAnZWagAArEIP/2wc6JGXPaPw53y/6M0P\nJiJbZIMgQwr/6jmLBmk6ujMIY8YrpFcTD80NdT0wJ/ZILIpGk6RdtpSs/ZGj\nQcTkWNrmGG1tj5KbrN3ycKh+yy+keDnahSiUReZ8WJcorGKVIMieaUgHKPfx\ni/+HjA1PQRsNg73n/1vLYKeTPwGrZUVikwurAnGkXdRxFsoJUXttUIchlE5d\noEp2xRlrcOMBj2o7qfkaewY1ilIWr3JxYmov9d/odGlihis7zqkIKEBpbLps\n6UX86glEZhrXEJ2xu/0GjgH1NyxRYLmTWfkTAF5qw20zIb3GmyYHO7yRSd1W\nQaCh0ii8rKlrGXjZ6eblroLS9n4V5G01oLlyo0giA1TjOngSA9Qxle/RE4PL\nddUmW5o5YEy5+43JIqjkxhZSTvz6ddIHmQjJXi48S+7DeYgktmGNaR2lYiua\ndo2V+tPPwuZcuHlgGWjyWjj771wmdxBt80SF2S6H7+vjdI9E3Xzx+feTyYdP\nTfCPSOko/KT/+brUq7GPrun5e9OYxddAcns4cj9CDURZ6wRB8+r5Sh9iyMHF\nLVVWz1QVKIBm5EbG4Os4oKqVfmozIDGsTrW9K23S9aK5gKBahBaD/Hh+JPgA\nUs7OV64um1XZvam9N17IYQ+b05jG6ZPU+a+c4WP6raUyQ6FXWfk8THM27WYs\nefYO\r\n=5n/n\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">=6.1.0",
+        "cordova-android": ">=6.1.0",
+        "cordova-ios": ">=4.3.1"
+      },
+      "<2.0.0": {
+        "cordova": ">=3.5.0"
+      }
+    }
+  },
+  "gitHead": "2d6973ff67b0899a581bf0c44162bf76b49b88f5",
+  "homepage": "https://github.com/xu-li/cordova-plugin-wechat#readme",
+  "keywords": [
+    "cordova",
+    "wechat",
+    "weixin",
+    "share",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "floatinghotpot",
+      "email": "rjfun.mobile@gmail.com"
+    },
+    {
+      "name": "xu-li",
+      "email": "AthenaLightenedMyPath@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-wechat",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xu-li/cordova-plugin-wechat.git"
+  },
+  "version": "2.3.0"
+}
