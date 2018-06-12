@@ -9,6 +9,7 @@ import { AppPage } from '../pages/app/app';
 import { PersonalPage } from '../pages/personal/personal';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,12 +24,13 @@ import {IonicStorageModule} from '@ionic/storage'
     AppPage,
     PersonalPage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {backButtonText:'返回'}),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -39,7 +41,8 @@ import {IonicStorageModule} from '@ionic/storage'
     AppPage,
     PersonalPage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,

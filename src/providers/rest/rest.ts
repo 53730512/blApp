@@ -45,6 +45,10 @@ export class RestProvider {
   }
 
 
+  register(mobile, nickname, password) : Observable<string[]>{
+    return this.getUrlReturn(this.apiUrlRegister + "?mobile=" + mobile+ "&nickname=" + nickname + "&password=" + password);
+  }
+
   /**
    * 登录，密码 MD5 加密后的登录功能
    * 
