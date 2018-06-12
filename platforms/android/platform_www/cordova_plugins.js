@@ -9,11 +9,12 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-splashscreen.SplashScreen",
-    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-    "pluginId": "cordova-plugin-splashscreen",
+    "id": "cordova-plugin-inappbrowser.inappbrowser",
+    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+    "pluginId": "cordova-plugin-inappbrowser",
     "clobbers": [
-      "navigator.splashscreen"
+      "cordova.InAppBrowser.open",
+      "window.open"
     ]
   },
   {
@@ -25,34 +26,24 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-inappbrowser.inappbrowser",
-    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-    "pluginId": "cordova-plugin-inappbrowser",
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
     "clobbers": [
-      "cordova.InAppBrowser.open",
-      "window.open"
-    ]
-  },
-  {
-    "id": "cordova-plugin-wechat.Wechat",
-    "file": "plugins/cordova-plugin-wechat/www/wechat.js",
-    "pluginId": "cordova-plugin-wechat",
-    "clobbers": [
-      "Wechat"
+      "navigator.splashscreen"
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-device": "2.0.2",
-  "cordova-plugin-splashscreen": "5.0.2",
-  "cordova-plugin-ionic-webview": "1.1.19",
-  "cordova-plugin-ionic-keyboard": "2.0.5",
   "cordova-plugin-inappbrowser": "3.0.0",
-  "cordova-plugin-vibration": "3.1.0",
-  "cordova-plugin-wechat": "2.3.0"
+  "cordova-plugin-ionic-keyboard": "2.1.2",
+  "cordova-plugin-ionic-webview": "1.1.19",
+  "cordova-plugin-splashscreen": "5.0.2",
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-vibration": "3.1.0"
 };
 // BOTTOM OF METADATA
 });
