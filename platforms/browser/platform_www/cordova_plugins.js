@@ -58,14 +58,6 @@ module.exports = [
         "merges": [
             "navigator"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-wechat/www/wechat.js",
-        "id": "cordova-plugin-wechat.Wechat",
-        "pluginId": "cordova-plugin-wechat",
-        "clobbers": [
-            "Wechat"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -73,12 +65,11 @@ module.exports.metadata =
 {
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-inappbrowser": "3.0.0",
-    "cordova-plugin-ionic-keyboard": "2.0.5",
+    "cordova-plugin-ionic-keyboard": "2.1.2",
     "cordova-plugin-ionic-webview": "1.1.19",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-vibration": "3.1.0",
-    "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-wechat": "2.3.0"
+    "cordova-plugin-whitelist": "1.3.3"
 }
 // BOTTOM OF METADATA
 });
