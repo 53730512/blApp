@@ -7,22 +7,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-device": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-device@2.0.2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-splashscreen": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-splashscreen@5.0.2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-ionic-webview": {
     "source": {
       "type": "registry",
@@ -31,10 +15,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-ionic-keyboard": {
+  "cordova-plugin-device": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-ionic-keyboard@2.0.5"
+      "id": "cordova-plugin-device"
     },
     "is_top_level": true,
     "variables": {}
@@ -47,6 +31,22 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-plugin-ionic-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-keyboard"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-splashscreen@5.0.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
   "cordova-plugin-vibration": {
     "source": {
       "type": "registry",
@@ -54,15 +54,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-wechat": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-wechat@2.3.0"
-    },
-    "is_top_level": true,
-    "variables": {
-      "WECHATAPPID": "wxa04689ca5331ab0c"
-    }
   }
 }
